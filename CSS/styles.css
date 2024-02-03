@@ -1,0 +1,1106 @@
+body {
+
+    background-image: url(sistemass.jpg);
+    background-size: cover;
+
+    min-height: 100vh;
+    min-width: 100vh;
+    background-position: center;
+
+}
+
+
+
+.name {
+    width: 100;
+    height: 200px;
+    background: #357DED;
+    margin: 5% auto;
+    transform: skewY(-4deg);
+}
+
+.name .content {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+}
+
+.name .content .p1 {
+    color: white;
+    margin: 5% auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    transform: skewY(4deg);
+    margin-top: 2;
+    margin-bottom: 0;
+}
+
+.name .content .p2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    transform: skewY(4deg);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.name .img {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    transform: skewY(5deg);
+    overflow: hidden;
+}
+
+.name .img img {
+    width: 180px;
+    height: 180px;
+}
+
+.info {
+    width: 70%;
+    height: 250px;
+    background-color: #357DED;
+    margin: 5% auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.info .tituloseccion {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white solid;
+}
+
+.info .tituloinfo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 15px;
+}
+
+.info .masinfor {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*barra para menu responsive */
+.toggle-menu {
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    right: 9rem;
+    filter: invert(1);
+    z-index: 1;
+
+    margin: auto;
+
+}
+
+/*barra seleccionar */
+.Seleccionar {
+    background-color: #357DED;
+    width: 65%;
+    height: 50px;
+    margin: auto;
+    padding: 10;
+
+}
+
+.Seleccionar .tituloseccion {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bolder;
+
+}
+
+.menu {
+    list-style: none;
+    background: #357DED;
+    width: 65%;
+    margin: auto;
+    padding: 0;
+    transition: transform 0.3s;
+    transform: translateY(-300%);
+}
+
+/*esconder menu responsivo cundo pase los 800px*/
+@media screen and (min-width: 800px) {
+    .Seleccionar {
+
+
+
+        display: none;
+    }
+
+    .menu {
+        transform: translateY(0);
+
+    }
+
+    .toggle-menu {
+        display: none;
+        transform: translateY(0);
+
+    }
+
+
+
+
+
+}
+
+
+/*enseñar menu responsive en la posicion inicial*/
+.menu--show {
+    transform: translateY(0);
+}
+
+.menu li {
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    font-size: 25px;
+
+}
+
+
+.menu li a:hover {
+    background: #8CBCB9;
+
+}
+
+/*colocar en el menu de contacto la imagen con respecro a la posicion 1 de la lista*/
+.menu2>li:first-child>a {
+    background-image: url(../img/volver.webp);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    width: 4.5%;
+    margin: 6%;
+    border-radius: 10%;
+    height: 50px;
+    background-color: #357DED;
+    background-position: center;
+    display: block;
+}
+
+.menu2>li:first-child:hover>a {
+    background-color: #8CBCB9;
+}
+
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2, );
+    border-radius: 20px;
+    text-align: center;
+    width: 360px;
+    background-color: #737f82;
+    margin-left: 35%;
+
+
+
+}
+
+form h2 {
+    color: white;
+    font-size: 25px;
+}
+
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    background-color: #818ec6;
+    padding: 20px 14px;
+    margin-bottom: 25px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: #bfc9f3;
+    font-size: 15px;
+}
+
+.focus {
+    outline: 1px solid #14f9A6;
+
+}
+
+.btn {
+    background-color: white;
+    color: #146031;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #14f9A6;
+}
+
+
+
+
+.Estudios {
+    width: 35%;
+    height: 500px;
+    background-color: #357DED;
+
+    padding: 40px;
+    border-radius: 20px;
+
+
+}
+
+.Estudios .tituloestudio {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white solid;
+}
+
+.Estudios .titulo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 15px;
+}
+
+.Estudios .masinfo {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+.EstudiosA {
+    width: 35%;
+    height: 500px;
+    background-color: #357DED;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+
+}
+
+
+.EstudiosA .tituloestudio {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white solid;
+}
+
+.EstudiosA .titulo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 15px;
+}
+
+.EstudiosA .masinfo {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+.EstudiosA .masinfor {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin-left: 125px;
+}
+
+.contenedor {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor .Estudios .imagen {
+    position: absolute;
+    margin: 2%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+
+
+
+}
+
+.contenedor .Estudios .imagen img {
+
+    width: 200px;
+    height: 200px;
+
+
+}
+
+.contenedor .EstudiosA .imagencolegio {
+
+    position: absolute;
+    margin: 30px;
+    width: 300px;
+    height: 200px;
+    border-radius: 1%;
+    overflow: hidden;
+}
+
+.contenedor .EstudiosA .imagencolegio img {
+
+    width: 200px;
+    height: 150px;
+}
+
+
+.contenedor1 {
+    display: flex;
+    margin: 5%;
+}
+
+.EstudiosU {
+    width: 35%;
+    height: 500px;
+    background-color: #357DED;
+    padding: 40px;
+    border-radius: 20px;
+
+
+
+}
+
+.EstudiosU .tituloestudio {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white solid;
+}
+
+.EstudiosU .titulo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 15px;
+}
+
+.EstudiosU .masinfo {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+.EstudiosU .masinfor {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin-left: 125px;
+}
+
+
+.contenedor1 .EstudiosU .imagenUniversidad {
+    position: absolute;
+    margin: 2%;
+
+    width: 150x;
+    height: 150px;
+    overflow: hidden;
+
+
+
+}
+
+.contenedor1 .EstudiosU .imagenUniversidad img {
+
+    width: 150px;
+    height: 150px;
+
+
+}
+
+.EstudiosSena {
+    width: 35%;
+    height: 500px;
+    background-color: #357DED;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+
+
+}
+
+.EstudiosSena .tituloestudio {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white solid;
+}
+
+.EstudiosSena .titulo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 15px;
+}
+
+.EstudiosSena .masinfo {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+.EstudiosSena .masinfor {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin-left: 16%;
+}
+
+.EstudiosSena .masinforma {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin-left: 16%;
+    font-size: large;
+    margin-top: -1%;
+}
+
+
+.contenedor1 .EstudiosSena .imagenSena {
+    position: absolute;
+
+    margin: 2%;
+    height: 150px;
+    border-radius: 1%;
+    overflow: hidden;
+}
+
+.contenedor1 .EstudiosSena .imagenSena img {
+
+    width: 200px;
+    height: 150px;
+}
+
+
+
+#botonArriba {
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    width: 40px;
+    transition: all 1s;
+}
+
+.habilidad {
+    width: 85%;
+    height: 600px;
+    background-color: #357DED;
+    margin: 10%;
+    padding: 40px;
+    border-radius: 20px;
+    margin-left: auto;
+
+
+
+}
+
+.habilidad .habilidades {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+
+
+.slider {
+    width: 60vw;
+    height: auto;
+    overflow: hidden;
+    margin: 30% auto;
+    margin-top: 3%;
+
+
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(300px * 12);
+}
+
+.slider .slide {
+    width: 300px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-animation: translatex(0);
+        transform: translatex(0);
+    }
+
+    100% {
+        -webkit-animation: translatex(calc(-300px * 7));
+        transform: translatex(calc(-300px * 7));
+    }
+}
+
+@media (max-width:932px) {
+
+    .name {
+
+        width: 90%;
+        height: 180px;
+    }
+
+    .name .content {
+        width: 45%;
+        height: 45%;
+
+    }
+
+    .name .content .p1 {
+
+        font-size: 25px;
+
+    }
+
+    .name .content .p2 {
+
+        font-size: 12px;
+
+    }
+
+    .name .img {
+
+        width: 160px;
+        height: 160px;
+
+    }
+
+    .name .img img {
+        width: 160px;
+        height: 160px;
+    }
+
+
+    .Estudios {
+        width: 30%;
+        height: 500px;
+
+
+    }
+
+    .contenedor .Estudios .imagen {
+        width: 120px;
+        height: 120px;
+        margin: 5%;
+    }
+
+    .contenedor .Estudios .imagen img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+
+
+    .EstudiosA {
+        width: 30%;
+        height: 500px;
+    }
+
+    .contenedor .EstudiosA .imagencolegio {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contenedor .EstudiosA .imagencolegio img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .EstudiosU {
+        width: 30%;
+        height: 500px;
+    }
+
+    .contenedor1 .EstudiosU .imagenUniversidad {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contenedor1 .EstudiosU .imagenUniversidad img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .EstudiosSena {
+        width: 30%;
+        height: 500px;
+    }
+
+    .contenedor1 .EstudiosSena .imagenSena {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contenedor1 .EstudiosSena .imagenSena img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .Estudios .tituloestudio {
+
+        font-size: 20PX;
+
+    }
+
+    .Estudios .titulo {
+        font-size: 16PX;
+    }
+
+    .Estudios .masinfo {
+        font-size: 16PX;
+
+    }
+
+    .EstudiosA .tituloestudio {
+
+        font-size: 20PX;
+
+    }
+
+    .EstudiosA .titulo {
+
+        font-size: 16px;
+
+    }
+
+    .EstudiosA .masinfo {
+
+        font-size: 16PX;
+
+    }
+
+    .EstudiosA .masinfor {
+        font-size: 16PX;
+        margin-left: 5%;
+    }
+
+    .EstudiosU .tituloestudio {
+
+        font-size: 20PX;
+
+    }
+
+    .EstudiosU .titulo {
+
+        font-size: 16PX;
+
+    }
+
+    .EstudiosU .masinfo {
+
+        font-size: 16PX;
+
+    }
+
+    .EstudiosU .masinfor {
+        font-size: 16PX;
+        margin-left: 5%;
+    }
+
+    .EstudiosSena .tituloestudio {
+
+        font-size: 20PX;
+
+    }
+
+    .EstudiosSena .titulo {
+
+        font-size: 16PX;
+
+    }
+
+    .EstudiosSena .masinfo {
+
+        font-size: 16PX;
+    }
+
+    .EstudiosSena .masinfor {
+        font-size: 16PX;
+    }
+
+    .EstudiosSena .masinforma {
+
+        font-size: 16PX;
+
+    }
+}
+
+@media (max-width:700px) {
+    .name {
+        width: 70%;
+        height: 180px;
+    }
+
+    .name .content {
+        width: 40%;
+        height: 40%;
+        margin: 5%;
+        left: 10%;
+    }
+
+    .name .content .p1 {
+
+        font-size: 20px;
+
+    }
+
+    .name .content .p2 {
+
+        font-size: 10px;
+
+    }
+
+    .name .img {
+
+        width: 120px;
+        height: 120px;
+
+    }
+
+    .name .img img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+
+    .info {
+        width: 50%;
+        height: 160px;
+
+
+    }
+
+    .info .tituloseccion {
+
+        font-size: 20px;
+
+    }
+
+    .info .tituloinfo {
+
+        font-size: 12px;
+
+    }
+
+    .info .masinfor {
+
+        font-size: 12px;
+
+    }
+
+    .Estudios {
+        width: 15%;
+        height: 430px;
+
+
+    }
+
+    .contenedor .Estudios .imagen {
+        width: 90px;
+        height: 90px;
+        margin-left: -3%;
+    }
+
+    .contenedor .Estudios .imagen img {
+        width: 90px;
+        height: 90px;
+
+
+
+    }
+
+
+
+    .EstudiosA {
+        width: 15%;
+        height: 430px;
+    }
+
+    .contenedor .EstudiosA .imagencolegio {
+        width: 90px;
+        height: 90px;
+        margin-left: -3%;
+    }
+
+    .contenedor .EstudiosA .imagencolegio img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .EstudiosU {
+        width: 15%;
+        height: 430px;
+    }
+
+    .contenedor1 .EstudiosU .imagenUniversidad {
+        width: 90px;
+        height: 90px;
+        margin-left: -2%;
+
+    }
+
+    .contenedor1 .EstudiosU .imagenUniversidad img {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .EstudiosSena {
+        width: 15%;
+        height: 430px;
+    }
+
+    .contenedor1 .EstudiosSena .imagenSena {
+        width: 90px;
+        height: 90px;
+        margin-left: -2%;
+    }
+
+    .contenedor1 .EstudiosSena .imagenSena img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .Estudios .tituloestudio {
+
+        font-size: 15PX;
+
+    }
+
+    .Estudios .titulo {
+        font-size: 11PX;
+    }
+
+    .Estudios .masinfo {
+        font-size: 11PX;
+
+    }
+
+    .EstudiosA .tituloestudio {
+
+        font-size: 15PX;
+
+    }
+
+    .EstudiosA .titulo {
+
+        font-size: 11px;
+
+    }
+
+    .EstudiosA .masinfo {
+
+        font-size: 11PX;
+
+    }
+
+    .EstudiosA .masinfor {
+        font-size: 11PX;
+        margin-left: 5%;
+    }
+
+    .EstudiosU .tituloestudio {
+
+        font-size: 15PX;
+
+    }
+
+    .EstudiosU .titulo {
+
+        font-size: 11PX;
+
+    }
+
+    .EstudiosU .masinfo {
+
+        font-size: 11PX;
+
+    }
+
+    .EstudiosU .masinfor {
+        font-size: 11PX;
+        margin-left: 5%;
+    }
+
+    .EstudiosSena .tituloestudio {
+
+        font-size: 15PX;
+
+    }
+
+    .EstudiosSena .titulo {
+
+        font-size: 11PX;
+
+    }
+
+    .EstudiosSena .masinfo {
+
+        font-size: 11PX;
+    }
+
+    .EstudiosSena .masinfor {
+        font-size: 11PX;
+    }
+
+    .EstudiosSena .masinforma {
+
+        font-size: 11PX;
+
+    }
+
+    .habilidad {
+        width: 70%;
+        height: 500px;
+        background-color: #357DED;
+        margin: 10%;
+        padding: 40px;
+        border-radius: 20px;
+        margin-left: auto;
+
+
+
+    }
+
+    .habilidad .habilidades {
+
+        font-size: 11px;
+
+    }
+
+
+
+    .slider {
+        width: 30vw;
+        height: 35vw;
+
+
+
+    }
+
+
+}
+
+
+@media (max-width:500px) {
+    .toggle-menu {
+
+        right: 4rem;
+
+
+        margin: auto;
+
+    }
+
+    body {
+        width: 40vh;
+    }
+}
+
+@media (max-width:600px) {
+
+    .name {
+        margin: 0;
+        width: 45%;
+        height: 180px;
+    }
+
+    .Seleccionar {
+        background-color: #357DED;
+        width: 45%;
+        height: 50px;
+        margin: 0;
+        padding: 10;
+
+    }
+
+    .toggle-menu {
+        right: 14rem;
+    }
+
+    .menu {
+        margin: 0;
+        width: 45%;
+    }
+
+    .info {
+        margin: 0;
+        width: 36%;
+    }
+
+}
